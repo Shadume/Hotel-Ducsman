@@ -17,84 +17,183 @@
 
 <body>
 
-    <div class="headerContact">
+    <div class="headerTop">
 
-        <div class="duscman">
+        <header>
 
-            <h1>Duscman</h1>
+            <nav>
 
-            <p>Nous sommes à votre disposition pour toute question relative à votre séjour ou pour vos préparer le plus
-                luxueux des voyages.</p>
+                <div class="star">
 
-            <div class="phone">
+                    <img src="images/icon/star.png" alt="étoile">
 
-                <i class="flaticon-call"></i>
+                    <img src="images/icon/star.png" alt="étoile">
 
-                <p class="pPhone1">Information & Réservation</p>
+                    <img src="images/icon/star.png" alt="étoile">
 
-                <a href="03 20 01 02 03">03 20 01 02 03</a>
+                    <img src="images/icon/star.png" alt="étoile">
+
+                    <img src="images/icon/star.png" alt="étoile">
+
+                </div>
+
+                <h1>DUCSMAN</h1>
+
+                    <h2>DORMEZ COMME JAMAIS</h2>
+
+                <div class="navbar">
+
+                    <a href="accueil.html">ACCUEIL</a>
+
+                    <a href="apropos.html">A PROPOS</a>
+
+                    <a href="chambresetsuites.html">CHAMBRES & SUITES</a>
+
+                    <a href="restaurant.html">RESTAURANT</a>
+
+                    <a href="centrebienêtre.html">CENTRE DE BIEN ÊTRE</a>
+
+                    <a href="actualité.html">ACTUALITE</a>
+
+                    <a href="contact.html">CONTACT</a>
+
+                </div>
+
+                <div class="iconHeaderPhone">
+
+                    <i class="flaticon-call"></i>
+
+                </div>
+
+                <div class="HeaderPhone">
+
+                    <p class="pHeaderPHone">Informations & Réservations</p>
+
+                    <a href="03 20 01 02 03">03 20 01 02 03</a>
+
+                </div>
+
+            </nav>
+
+        </header>
+
+        <div class="headerContact">
+
+            <div class="duscman">
+
+                <p>Duscman</p>
+
+                <p>Nous sommes à votre disposition pour toute question relative à votre séjour ou pour vos préparer le
+                    plus
+                    luxueux des voyages.</p>
+
+                <div class="headPhone">
+
+                    <div class="iconHeadPhone">
+
+                        <i class="flaticon-call"></i>
+
+                    </div>
+
+                    <div class="phone">
+
+                        <p class="pPhone1">Information & Réservation</p>
+
+                        <a href="03 20 01 02 03">03 20 01 02 03</a>
+
+                    </div>
+
+                </div>
+
+                <div class="headEmail">
+
+                    <div class="iconHeadEmail">
+
+                        <i class="flaticon-envelope"></i>
+
+                    </div>
+
+                    <div class="mail">
+
+                        <p class="pEmail1">E-mail</p>
+
+                        <a href="mailto:info@ducsman-group.com">info@ducsman-group.com</a>
+
+                    </div>
+
+                </div>
+
+                <div class="headAdresse">
+
+                    <div class="iconHeadAdresse">
+
+                        <i class="flaticon-location-pin"></i>
+
+                    </div>
+
+                    <p class="pAdresse1">Adresse</p>
+
+                    <div class="adresse">
+
+                        <a href="#map">
+
+                            <p class="pAdresse2">23 avenue des Nations Unies</p>
+                            <p class="pAdresse3">75001 Paris</p>
+
+                        </a>
+
+                    </div>
+
+                </div>
 
             </div>
 
-            <div class="email">
+            <form>
 
-                <i class="flaticon-envelope"></i>
+                <div class="leftForm">
 
-                <p class="pEmail1">E-mail</p>
+                    <p class="titreForm">Restons en contact</p>
 
-                <a href="mailto:info@ducsman-group.com">info@ducsman-group.com</a>
+                    <label for="name">Votre nom*</label>
+                    <input type="text" name="name" id="name">
 
-            </div>
+                    <label for="phoneNumber">Votere numéro de téléphone*</label>
+                    <input type="tel" name="phoneNumber" id="phoneNumber">
 
-            <div class="adresse">
+                </div>
 
-                <i class="flaticon-location-pin"></i>
+                <div class="rightForm">
 
-                <p class="pAdresse1">Adresse</p>
-                <p class="pAdresse2">23 avenue des Nations Unies</p>
-                <p class="pAdresse3">75001 Paris</p>
+                    <label for="e-mail">Votre e-mail*</label>
+                    <input type="email" name="e-mail" id="e-mail">
 
-            </div>
+                    <label for="sujet">Sujet*</label>
+                    <input type="text" name="sujet" id="sujet">
+
+                </div>
+
+                <label for="message">Message*</label>
+                <input type="text" name="message" id="message">
+
+                <br>
+
+                <label for="envoyer"></label>
+                <input type="submit" name="envoyer" id="envoyer">
+
+            </form>
 
         </div>
-
-        <!-- Créer une ancre sur l'adresse qui renvoit sur la carte -->
-
-
-        <form>
-
-            <label for="name">Votre nom*</label>
-            <input type="text" name="name" id="name">
-
-            <label for="phoneNumber">Votere numéro de téléphone*</label>
-            <input type="tel" name="phoneNumber" id="phoneNumber">
-
-            <label for="message">Message*</label>
-            <input type="text" name="message" id="message">
-
-            <label for="e-mail">Votre e-mail*</label>
-            <input type="email" name="e-mail" id="e-mail">
-
-            <label for="sujet">Sujet*</label>
-            <input type="text" name="sujet" id="sujet">
-
-            <label for="envoyer"></label>
-            <input type="submit" name="envoyer" id="envoyer">
-
-        </form>
-
     </div>
-
     <div class="mapInteract">
 
-        <iframe class="map"
+        <iframe id="map" class="map"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.8813028166373!2d2.2884691156744563!3d48.86047377928766!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66fe3411d2971%3A0xb51467f04765bff!2sAv.%20des%20Nations%20Unies%2C%2075116%20Paris!5e0!3m2!1sfr!2sfr!4v1677855866590!5m2!1sfr!2sfr"
             width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"></iframe>
 
     </div>
 
-    <footer>
+    <div class="hotelContact">
 
         <div class="divHotel">
 
@@ -117,9 +216,11 @@
 
             <br>
 
-        <!-- Créer une ancre sur l'adresse qui renvoit sur la carte -->
+            <a href="#map">
 
-            <p>23 avenue des Nations Unies 75001 Paris</p>
+                <p>23 avenue des Nations Unies 75001 Paris</p>
+
+            </a>
 
             <div class="phone">
 
@@ -141,15 +242,15 @@
 
             </div>
 
-            <div class="mentionsConditionsPolitique">
-
-                <p>Mentions légales - Conditions Générales de Ventes - Politiques de confidentialité - @Copyright 2023 -
-                    Duscman Group</p>
-
-            </div>
-
-
         </div>
+
+    </div>
+
+    <footer>
+
+        <p>Mentions légales - Conditions Générales de Ventes - Politiques de confidentialité -
+            <span>@Copyright 2023 - Duscman Group</span>
+        </p>
 
     </footer>
 
