@@ -7,62 +7,56 @@ body {
   font-family: "Barlow", sans-serif;
 }
 
-.rate {
-  margin: auto;
-  text-align: center;
-}
-
-h1 {
-  font-family: "gilda display";
-  color: #AA8453;
-}
-
-h2 {
-  font-family: "barlow";
-  color: white;
-}
-
 nav {
+  position: fixed;
+  justify-content: space-around;
   background-color: #1B1B1B;
   width: 20%;
+  height: 100%;
 }
-
+nav h1 {
+  font-family: "gilda display";
+  color: #AA8453;
+  font-size: 20px;
+}
+nav h2 {
+  font-family: "barlow";
+  color: white;
+  font-size: 10px;
+}
 nav div a {
   text-decoration: none;
   color: white;
   margin-left: 10px;
 }
-
-a:hover {
+nav div a:hover {
   color: #AA8453;
 }
-
-img {
+nav img {
   width: 10px;
 }
-
-.nav {
+nav .rate {
+  margin: auto;
+  text-align: center;
+}
+nav .navigation {
   display: flex;
   flex-direction: column;
   color: #8D8D8D;
-  margin-bottom: 10px;
+  font-size: 10px;
+  line-height: 2;
 }
-
-.reservation {
+nav .reservation {
   display: flex;
 }
-
-.flaticon-call {
+nav .flaticon-call {
   color: #AA8453;
   margin-left: 10px;
 }
-
-.info {
+nav .info {
   color: #8D8D8D;
   margin-left: 10px;
 }
-
-.number {
+nav .number {
   color: #AA8453;
-  margin-bottom: 50px;
 }/*# sourceMappingURL=main.css.map */

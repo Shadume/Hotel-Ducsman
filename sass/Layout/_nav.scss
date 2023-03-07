@@ -1,42 +1,58 @@
-.rate{margin: auto;
-    text-align: center;
-    }
-h1{font-family: "gilda display";
-color: #AA8453;
-}
-h2{font-family: "barlow";
-color:white
-}
-nav{background-color: #1B1B1B;
-    width: 20%;}
-nav div a {
-text-decoration: none;
-color: white;
-margin-left: 10px;
-}
-a:hover{color: #AA8453;}
 
-img{
-    width: 10px;
-}
-.nav{
-    display: flex;
-    flex-direction: column;
-    color: #8D8D8D;
-    margin-bottom: 10px   
-}
-.reservation {
-    display: flex;
-}
-.flaticon-call {
- color: #AA8453;
-margin-left: 10px;
-}
-.info{
-    color: #8D8D8D;
+nav {
+    position: fixed;
+    justify-content: space-around;
+    background-color: #1B1B1B;
+    width: 20%;
+    height: 100%;
+    h1 {
+        font-family: "gilda display";
+        color: #AA8453;
+        font-size: 20px;
+    }
+
+    h2{
+        font-family: "barlow";
+        color:white;
+        font-size:10px;
+    }
+    div {
+        a {
+            text-decoration: none;
+            color: white;
+            margin-left: 10px;
+
+            &:hover{color: #AA8453;}
+
+        }
+    }
+    img{
+        width: 10px;
+    } 
+    .rate{margin: auto;
+        text-align: center;
+        } 
+    .navigation{
+        display: flex;
+        flex-direction: column;
+        color: #8D8D8D;
+        font-size: 10px;
+        line-height: 2;
+    }  
+    .reservation {
+        display: flex;
+    }
+    .flaticon-call {
+     color: #AA8453;
     margin-left: 10px;
+    }
+    .info{
+        color: #8D8D8D;
+        margin-left: 10px;
+    }
+    .number{
+        color: #AA8453;
+    }
 }
-.number{
-    color: #AA8453;
-    margin-bottom: 50px;
-}
+
+
