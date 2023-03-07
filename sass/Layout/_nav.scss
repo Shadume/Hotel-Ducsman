@@ -1,5 +1,5 @@
 nav {
-    position: fixed;
+    position: absolute;
     justify-content: space-around;
     background-color: #1B1B1B;
     width: 20%;
@@ -13,12 +13,13 @@ nav {
     h2{
         font-family: "barlow";
         color:white;
-        font-size:10px;
+        font-size: 12px;
+        letter-spacing: 5px;
     }
     div {
         a {
             text-decoration: none;
-            color: white;
+            color: #8D8D8D;
             margin-left: 10px;
 
             &:hover{color: #AA8453;}
@@ -28,30 +29,36 @@ nav {
     img{
         width: 10px;
     } 
-    .rate{margin: auto;
+    .rate{margin:10px auto 0 auto;
         text-align: center;
         } 
     .navigation{
         display: flex;
+        margin-left: 10px;
         flex-direction: column;
-        color: #8D8D8D;
         font-size: 10px;
-        line-height: 2;
+        line-height: 3;
     }  
     .reservation {
         display: flex;
     }
     .flaticon-call {
+    font-size: 40px;
      color: #AA8453;
-
+     display: flex;
+     margin-right:10px;
+     align-items: center;
     margin-left: 10px;
     }
     .info{
+        display: flex;
         color: #8D8D8D;
         margin-left: 10px;
+        font-size: 15px;
     }
     .number{
         color: #AA8453;
     }
 }
+
 
