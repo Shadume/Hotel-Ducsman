@@ -1,0 +1,24 @@
+@mixin btn{
+    padding: 12px 20px;
+    border: 1px solid white;
+    text-transform: uppercase;
+    &--whiteBox{
+        text-decoration: none;
+        color: white;
+    }
+}
+
+@mixin littleTitle($l-spacing){
+    color: $color-primary;
+    font-family: $little-title;
+    letter-spacing: $l-spacing;
+    text-transform: uppercase;
+}
+
+@mixin title($font-size){
+    font-size: $font-size;
+    color: white;
+    line-height: 1.25em;
+    font-weight: 400;
+    margin: 0;
+}
