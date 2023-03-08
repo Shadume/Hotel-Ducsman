@@ -8,11 +8,19 @@
     <link rel="stylesheet" href="css/themify-icons.css">
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="sass/main.css">
+    <script defer src="navbar.js"></script>
     <title>navbar</title>
 </head>
 <!--conception de la navbar"> -->
 <body>
     <nav>
+            <button class="hamburger" type="button"
+            aria-label="navigation"
+            aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         <div class="rate">
       <img src="images/icon/star.png" alt="note"> 
       <img src="images/icon/star.png" alt="note"> 
@@ -35,8 +43,10 @@
         </div>
         <div class="info">
             <i class="flaticon-call"></i>
+        <div>
             <p>Informations & Réservations</p>
-            <p>03 20 01 02 03</p>  
+            <p class="number">03 20 01 02 03</p>
+        </div>
         </div>
     </nav>
 </body>
