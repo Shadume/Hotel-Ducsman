@@ -46,7 +46,8 @@
         letter-spacing: 0.2rem;
         max-width: 15%;
         &:hover{
-            background-color: rgba($color: #ffffff, $alpha: 0.2);
+            background: rgba($color: #ffffff, $alpha: 0.2);
+            transition: all 0.3s ease;
         }
     }
 }
@@ -117,6 +118,10 @@
                 text-decoration: none;
                 color: #ffffff;
             }
+            &:hover{
+                background: $color-primary;
+                transition: all 0.3s ease;
+            }
         }
         &__card{
             position: relative;
@@ -170,6 +175,7 @@
     &__row{
         display: flex;
         background: #2b2b2b;
+        margin: 0 1.2%;
         article{
             width: 50%;
             display: flex;
@@ -217,19 +223,79 @@
     &__container{
         padding: 0 60px;
         display: flex;
+        justify-content: space-between;
         &__txt{
             width: 30.9%;
+            padding-left: 1.2%;
             &__reservation{
                 display: flex;
                 align-items: center;
+                margin-top: 30px;
                 i {
                     font-size: 35px;
                     color: $color-primary;
+                    margin-right: 20px;
+                }
+                &__num{
+                    color: $color-primary;
+                    font-size: 24px;
+                }
+                &__info{
+                    > * {
+                        margin: 0
+                    }
+                }
+            }
+            &__title{
+                @include title(46px);
+            }
+        }
+        &__option{
+            background: #2b2b2b;
+            width: 25%;
+            padding: 40px;
+            &__title{
+                @include title(24px);
+            }
+            &__price {
+                display: flex;
+                align-items: center;
+                p {
+                    &:first-of-type{
+                        font-size: 40px;
+                        color: $color-primary;
+                        font-family: $title-font;
+                    }
+                }
+            }
+            ul{
+                list-style: none;
+                padding: 0;
+                .ti-check{
+                    color: $color-primary;
+                }
+                i{
+                    padding-right: 30px;
+                }
+                li{
+                    margin-bottom: 15px;
                 }
             }
         }
-        >* {
-            padding: 0 1.2%;
-        }
+    }
+    &__right{
+        margin-right: 1.2%;
+    }
+}
+
+/*Mise en page de la section 5 => Services en +*/
+
+.sectionServices{
+    padding: 0 60px;
+    &__title{
+        @include title(46px);
+    }
+    &__cards{
+        display: flex;
     }
 }

@@ -4,7 +4,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Gilda+Display&display=swap%27");
 body {
   background: #222222;
-  font-size: 15px;
+  font-size: 20px;
   font-weight: 400;
   line-height: 1.75em;
   color: rgba(255, 255, 255, 0.5);
@@ -70,7 +70,8 @@ h1, h2, h3, h4, h5 {
   color: white;
 }
 .accueilHeader__btn:hover {
-  background-color: rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.2);
+  transition: all 0.3s ease;
 }
 
 /*Mise en page de la section 1 => L'expérience du luxe*/
@@ -154,6 +155,10 @@ h1, h2, h3, h4, h5 {
   text-decoration: none;
   color: #ffffff;
 }
+.sectionChambres__cards__btn:hover {
+  background: #AA8453;
+  transition: all 0.3s ease;
+}
 .sectionChambres__cards__card {
   position: relative;
   margin-bottom: 20px;
@@ -205,6 +210,7 @@ h1, h2, h3, h4, h5 {
 .sectionDecouverte__row {
   display: flex;
   background: #2b2b2b;
+  margin: 0 1.2%;
 }
 .sectionDecouverte__row article {
   width: 50%;
@@ -259,82 +265,90 @@ h1, h2, h3, h4, h5 {
 .sectionOptions__container {
   padding: 0 60px;
   display: flex;
+  justify-content: space-between;
 }
 .sectionOptions__container__txt {
   width: 30.9%;
+  padding-left: 1.2%;
 }
 .sectionOptions__container__txt__reservation {
   display: flex;
   align-items: center;
+  margin-top: 30px;
 }
 .sectionOptions__container__txt__reservation i {
   font-size: 35px;
   color: #AA8453;
+  margin-right: 20px;
 }
-.sectionOptions__container > * {
-  padding: 0 1.2%;
-}
-
-.rate {
-  margin: auto;
-  text-align: center;
-}
-
-header h1 {
-  font-family: "gilda display";
+.sectionOptions__container__txt__reservation__num {
   color: #AA8453;
+  font-size: 24px;
 }
-
-header h2 {
-  font-family: "barlow";
+.sectionOptions__container__txt__reservation__info > * {
+  margin: 0;
+}
+.sectionOptions__container__txt__title {
+  font-size: 46px;
   color: white;
+  line-height: 1.25em;
+  font-weight: 400;
+  margin: 0;
 }
-
-nav {
-  background-color: #1B1B1B;
-  width: 20%;
+.sectionOptions__container__option {
+  background: #2b2b2b;
+  width: 25%;
+  padding: 40px;
 }
-
-nav div a {
-  text-decoration: none;
+.sectionOptions__container__option__title {
+  font-size: 24px;
   color: white;
-  margin-left: 10px;
+  line-height: 1.25em;
+  font-weight: 400;
+  margin: 0;
 }
-
-header a:hover {
-  color: #AA8453;
-}
-
-header img {
-  width: 10px;
-}
-
-.nav {
+.sectionOptions__container__option__price {
   display: flex;
-  flex-direction: column;
-  color: #8D8D8D;
-  margin-bottom: 10px;
+  align-items: center;
+}
+.sectionOptions__container__option__price p:first-of-type {
+  font-size: 40px;
+  color: #AA8453;
+  font-family: "Gilda Display", serif;
+}
+.sectionOptions__container__option ul {
+  list-style: none;
+  padding: 0;
+}
+.sectionOptions__container__option ul .ti-check {
+  color: #AA8453;
+}
+.sectionOptions__container__option ul i {
+  padding-right: 30px;
+}
+.sectionOptions__container__option ul li {
+  margin-bottom: 15px;
+}
+.sectionOptions__right {
+  margin-right: 1.2%;
 }
 
-.reservation {
+/*Mise en page de la section 5 => Services en +*/
+.sectionServices {
+  padding: 0 60px;
+}
+.sectionServices__title {
+  font-size: 46px;
+  color: white;
+  line-height: 1.25em;
+  font-weight: 400;
+  margin: 0;
+}
+.sectionServices__cards {
   display: flex;
 }
 
-header .flaticon-call {
-  color: #AA8453;
-  margin-left: 10px;
-}
-
-header .info {
-  color: #8D8D8D;
-  margin-left: 10px;
-}
-
-header .number {
-  color: #AA8453;
-  margin-bottom: 50px;
-}
-
+/*@import "./Layout/nav";*/
 .headerTop {
   display: flex;
 }
