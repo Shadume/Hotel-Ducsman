@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,46 +9,50 @@
     <link rel="stylesheet" href="css/themify-icons.css">
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="sass/main.css">
-    <script defer src="navbar.js"></script>
+    
     <title>navbar</title>
 </head>
 <!--conception de la navbar"> -->
+
 <body>
-    <nav>
-            <button class="hamburger" type="button"
-            aria-label="navigation"
-            aria-expanded="false">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-        <div class="rate">
-      <img src="images/icon/star.png" alt="note"> 
-      <img src="images/icon/star.png" alt="note"> 
-      <img src="images/icon/star.png" alt="note"> 
-      <img src="images/icon/star.png" alt="note"> 
-      <img src="images/icon/star.png" alt="note"> 
-        <h1>DUCSMAN</h1>
-        <h2>DORMEZ COMME JAMAIS</h2>
-        </div>
-        <div class="navigation">
-            <a href="accueil.html">ACCUEIL</a>
-            <a href="apropos.html">A PROPOS</a>
-            <a href="chambresetsuites.html">CHAMBRES & SUITES</a>
-            <a href="restaurant.html">RESTAURANT</a>
-            <a href="centrebienêtre.html">CENTRE DE BIEN ÊTRE </a>
-            <a href="actualité.html">ACTUALITE</a>
-            <a href="contact.html">CONTACT</a>
-        </div>
-        <div class="reservation">
-        </div>
-        <div class="info">
-            <i class="flaticon-call"></i>
-        <div>
-            <p>Informations & Réservations</p>
-            <p class="number">03 20 01 02 03</p>
-        </div>
-        </div>
-    </nav>
+    <main class="homepage">
+        <img src="images/icon/menu-burger.png" alt="ouvrir le menu" id="open-menu">
+        <aside>
+            <div class="sidebar sticky">
+                <div class="nav-header">
+                    <nav>
+                        <div class="rate">
+                            <img src="images/icon/star.png" alt="note">
+                            <img src="images/icon/star.png" alt="note">
+                            <img src="images/icon/star.png" alt="note">
+                            <img src="images/icon/star.png" alt="note">
+                            <img src="images/icon/star.png" alt="note">
+                        </div>
+                        <h1>DUCSMAN</h1>
+                        <h2>DORMEZ COMME JAMAIS</h2>
+                        <div class="navigation">
+                            <a href="accueil.html">ACCUEIL</a>
+                            <a href="apropos.html">A PROPOS</a>
+                            <a href="chambresetsuites.html">CHAMBRES & SUITES</a>
+                            <a href="restaurant.html">RESTAURANT</a>
+                            <a href="centrebienêtre.html">CENTRE DE BIEN ÊTRE </a>
+                            <a href="actualité.html">ACTUALITE</a>
+                            <a href="contact.html">CONTACT</a>
+                        </div>
+                        <div class="reservation">
+                        </div>
+                        <div class="info">
+                            <i class="flaticon-call"></i>
+                            <div>
+                                <p>Informations & Réservations</p>
+                                <p class="number">03 20 01 02 03</p>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </aside>
+    </main>
+    <script src="navbar.js"></script>
 </body>
 </html>
