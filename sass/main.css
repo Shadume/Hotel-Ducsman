@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Gilda+Display&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Gilda+Display&display=swap%27");
 h1, h3, h4 {
   font-family: "Gilda Display", sans-serif;
 }
@@ -8,172 +7,173 @@ body {
   font-family: "Barlow", sans-serif;
 }
 
-.rate {
-  margin: auto;
-  text-align: center;
-}
-
-h1 {
-  font-family: "gilda display";
-  color: #AA8453;
-}
-
-h2 {
-  font-family: "barlow";
-  color: white;
-}
-
-nav {
-  background-color: #1B1B1B;
-  width: 20%;
-}
-
-nav div a {
-  text-decoration: none;
-  color: white;
-  margin-left: 10px;
-}
-
-a:hover {
-  color: #AA8453;
-}
-
-img {
-  width: 10px;
-}
-
-.nav {
-  display: flex;
-  flex-direction: column;
-  color: #8D8D8D;
-  margin-bottom: 10px;
-}
-
-.reservation {
-  display: flex;
-}
-
-.flaticon-call {
-  color: #AA8453;
-  margin-left: 10px;
-}
-
-.info {
-  color: #8D8D8D;
-  margin-left: 10px;
-}
-
-.number {
-  color: #AA8453;
-  margin-bottom: 50px;
-}
-
 body {
-  background-color: #343a40;
-}
-
-.headerTop {
-  display: flex;
-}
-
-header {
-  padding-bottom: 500px;
-  background-color: #1B1B1B;
-}
-
-nav {
-  /* width: 20%; */
-}
-
-img {
-  width: 10px;
-}
-
-h1 {
-  display: flex;
-  justify-content: center;
-  font-family: "gilda display";
-  color: gold;
-}
-
-h2 {
-  font-size: xx-small;
-  text-align: center;
-  font-family: "barlow";
+  background-color: #222222;
   color: white;
 }
 
-.navbar {
-  display: flex;
-  flex-direction: column;
-  color: white;
+.pageContact {
+  display: grid;
+  grid-template-columns: 20% 80%;
+}
+@media screen and (max-width: 799px) {
+  .pageContact {
+    display: block;
+  }
 }
 
-nav div a {
-  text-decoration: none;
-  color: white;
+.headerTop p {
+  line-height: 160%;
 }
 
-a:hover {
-  color: gold;
+.headerContact p,
+.hotelContact p {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.headerContact p {
+  margin: 0;
 }
 
 .headerContact {
+  width: 80%;
   display: flex;
+  justify-content: space-between;
+  margin: 5% auto;
+}
+@media screen and (max-width: 799px) {
+  .headerContact {
+    display: block;
+  }
 }
 
-.duscman {
-  display: flex;
-  flex-direction: column;
+.duscman i {
+  color: #AA8453;
+  font-size: 200%;
+}
+
+.duscman a:hover {
+  text-decoration: underline;
+  color: #AA8453;
 }
 
 .headPhone {
   display: flex;
+  margin-top: 10%;
 }
 
 .iconHeadPhone {
-  padding-top: 30px;
-  padding-right: 30px;
-  /* padding-left: 30px; */
+  display: flex;
+  align-items: center;
+  margin-right: 5%;
 }
 
-.phone {
-  display: flex;
-  flex-direction: column;
+.phone a {
+  color: #AA8453;
 }
 
 .headEmail {
   display: flex;
+  margin-top: 10%;
 }
 
 .iconHeadEmail {
-  padding-top: 30px;
-  padding-right: 30px;
-  /* padding-left: 30px; */
+  display: flex;
+  align-items: center;
+  margin-right: 5%;
 }
 
-.mail {
-  display: flex;
-  flex-direction: column;
+.mail a {
+  color: #AA8453;
 }
 
 .headAdresse {
   display: flex;
+  margin-top: 10%;
 }
 
 .iconHeadAdresse {
-  padding-top: 30px;
-  padding-right: 30px;
-  /* padding-left: 30px; */
-}
-
-.adresse {
   display: flex;
-  flex-direction: column;
+  align-items: center;
+  margin-right: 5%;
 }
 
-input {
-  margin-bottom: 10px;
+.adresse a > p {
+  color: #AA8453;
+}
+
+.form {
+  margin-right: 10%;
+}
+@media screen and (max-width: 799px) {
+  .form {
+    margin: 20% 0;
+  }
+}
+
+@media screen and (max-width: 799px) {
+  form {
+    text-align: center;
+    margin-top: 10%;
+  }
+}
+
+.topForm {
+  display: flex;
+  margin-bottom: 10%;
+}
+@media screen and (max-width: 799px) {
+  .topForm {
+    display: block;
+    margin-bottom: 0;
+  }
+}
+
+.bottomForm {
+  display: flex;
+  margin-bottom: 10%;
+}
+@media screen and (max-width: 799px) {
+  .bottomForm {
+    display: block;
+    margin-bottom: 0;
+  }
+}
+
+input,
+#message {
+  margin: 2%;
+  padding-bottom: 10%;
+  background: transparent;
+  border-right: none;
+  border-top: none;
+  border-left: none;
+  color: white;
+}
+
+textarea {
+  width: 104%;
+  height: 20%;
+}
+
+#envoyer {
+  background-color: #AA8453;
+  color: white;
+  padding: 4%;
+  margin-top: 10%;
+}
+
+#envoyer:hover {
+  -webkit-transform: scale(1.1);
+}
+
+input[type=text], input[type=tel], textarea, input[type=email] {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+@media screen and (max-width: 799px) {
+  input[type=text], input[type=tel], textarea, input[type=email] {
+    width: 100%;
+  }
 }
 
 .mapInteract {
@@ -181,11 +181,127 @@ input {
   justify-content: center;
 }
 
+@media screen and (max-width: 799px) {
+  .map {
+    width: 100%;
+  }
+}
+
 .hotelContact {
+  width: 80%;
   display: flex;
+  justify-content: space-between;
+  margin: 5% auto;
+}
+@media screen and (max-width: 799px) {
+  .hotelContact {
+    display: block;
+    margin: 20% auto;
+  }
+}
+
+.divContact {
+  margin-right: 10%;
+}
+
+.divContact p {
+  color: white;
+}
+@media screen and (max-width: 799px) {
+  .divContact p {
+    color: rgba(255, 255, 255, 0.5);
+  }
+}
+
+.divContact p:hover {
+  color: #AA8453;
+}
+
+.tel {
+  margin-bottom: 10%;
+  font-size: 150%;
+  font-family: "Gilda Display", sans-serif;
+}
+
+.tel a {
+  color: white;
+}
+
+.iconContactTel {
+  display: flex;
+  align-items: center;
+  margin-right: 5%;
+}
+
+.tel a:hover {
+  color: #AA8453;
+}
+
+#aMailFooter {
+  border-bottom: 1px solid #AA8453;
+  padding-bottom: 2%;
+  color: white;
+  font-size: 90%;
+}
+
+#aMailFooter:hover {
+  color: #AA8453;
+}
+
+.reseaux {
+  margin-top: 10%;
+  display: flex;
+  justify-content: space-between;
+  padding-right: 15%;
+}
+
+.reseaux i {
+  font-size: 100%;
+  color: white;
+}
+@media screen and (max-width: 799px) {
+  .reseaux i {
+    font-size: 200%;
+  }
+}
+
+.reseaux i:hover {
+  color: #AA8453;
 }
 
 footer {
+  background-color: #1E1E1E;
   display: flex;
   justify-content: center;
+  padding: 1% 0% 1% 0%;
+}
+@media screen and (max-width: 799px) {
+  footer {
+    padding: 5% 30px;
+  }
+}
+
+footer a {
+  color: white;
+}
+
+footer a:hover {
+  color: #AA8453;
+}
+
+footer span {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+a {
+  text-decoration: none;
+}
+
+.pageContact h1 {
+  font-weight: 400;
+}
+@media screen and (max-width: 799px) {
+  .pageContact h1 {
+    font-size: 150%;
+  }
 }/*# sourceMappingURL=main.css.map */

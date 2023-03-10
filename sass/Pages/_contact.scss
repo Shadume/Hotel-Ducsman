@@ -1,178 +1,282 @@
 body {
-
-    background-color: #343a40;
-
-}
-
-.headerTop {
-
-    display: flex;
-
-}
-
-header {
-
-    padding-bottom: 500px;
-    background-color: #1B1B1B;
-
-}
-
-
-nav {
-
-    /* width: 20%; */
-}
-
-img {
-    
-    width: 10px;
-
-}
-
-
-h1 {
-
-    display: flex;
-    justify-content: center;
-    font-family: "gilda display";
-    color: gold;
-
-}
-
-h2 {
-    font-size: xx-small;
-    text-align: center;
-    font-family: "barlow";
-    color: white
-}
-
-.navbar {
-
-    display: flex;
-    flex-direction: column;
+    background-color: $body-color;
     color: white;
 }
 
+.pageContact {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    @media screen and (max-width: 799px) 
+    {display: block;}
+}
+
+// nav {
+//     background-color: $nav-color;
+// }
 
 
-nav div a {
+.headerTop p {
+    line-height: 160%;
+}
 
-    text-decoration: none;
-    color: white;
+.headerContact p,
+.hotelContact p {
+    color: rgba(255,255,255,0.5);
 
 }
 
-a:hover {
-
-    color: gold;
-
-}
-
-.iconHeaderPhone {
-
-
+.headerContact p{
+    margin: 0;
 }
 
 .headerContact {
-
+    width: 80%;
     display: flex;
-
+    justify-content: space-between;
+    margin: 5% auto;
+    @media screen and (max-width: 799px) 
+    {display: block;}
 }
 
-.duscman {
-
-    display: flex;
-    flex-direction: column;
-
+.duscman i {
+    color: $color-primary;
+    font-size: 200%;
 }
 
-.headPhone {
+.duscman a:hover {
+    text-decoration: underline;
+    color: $color-primary;
+}
 
+.headPhone { 
     display: flex;
-
+    margin-top: 10%;
 }
 
 .iconHeadPhone {
-
-    padding-top: 30px;
-    padding-right: 30px;
-    /* padding-left: 30px; */
-
+    display: flex;
+    align-items: center;
+    margin-right: 5%;
 }
 
-.phone {
-
-    display: flex;
-    flex-direction: column;
-
+.phone a {
+    color: $color-primary
 }
 
 .headEmail {
-
     display: flex;
-
+    margin-top: 10%;
 }
 
 .iconHeadEmail {
-
-    padding-top: 30px;
-    padding-right: 30px;
-    /* padding-left: 30px; */
-
+    display: flex;
+    align-items: center;
+    margin-right: 5%;
 }
 
-.mail {
-
-    display: flex;
-    flex-direction: column;
-
+.mail a {
+    color: $color-primary
 }
 
 .headAdresse {
-
     display: flex;
-
+    margin-top: 10%;
 }
 
 .iconHeadAdresse {
-
-    padding-top: 30px;
-    padding-right: 30px;
-    /* padding-left: 30px; */
-
-}
-
-.adresse {
-
     display: flex;
-    flex-direction: column;
-
+    align-items: center;
+    margin-right: 5%;
 }
 
-input {
+.adresse a>p {
+    color: $color-primary;
+}
 
-    margin-bottom: 10px;
+.form {
+    margin-right: 10%;
+    @media screen and (max-width: 799px) {
+        margin: 20% 0;
+    }
+}
 
+form{
+    @media screen and (max-width: 799px) {
+        text-align: center;
+        margin-top: 10%;
+    }
+}
+
+.topForm {
+    display: flex;
+    margin-bottom: 10%;
+    @media screen and (max-width: 799px) {
+        display: block;
+        margin-bottom: 0;
+    }
+}
+
+.bottomForm {
+    display: flex;
+    margin-bottom: 10%;
+    @media screen and (max-width: 799px) {
+        display: block;
+        margin-bottom: 0;
+    }
+}
+
+input, 
+#message {
+    margin: 2%;
+    padding-bottom: 10%;
+    background: transparent;
+    border-right: none;
+    border-top: none;
+    border-left: none;
+    color: white;
+}
+
+textarea {
+    width: 104%;
+    height: 20%;
+}
+
+#envoyer {
+    background-color: $color-primary;
+    color: white;
+    padding: 4%;
+    margin-top: 10%;
+}
+
+#envoyer:hover{
+    -webkit-transform: scale(1.1); 
+    }
+
+input[type=text], input[type=tel], textarea, input[type=email]{
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    @media screen and (max-width: 799px) 
+    {width: 100%;}
 }
 
 .mapInteract {
-
     display: flex;
     justify-content: center;
-
 }
 
+.map{
+    @media screen and (max-width: 799px) {
+        width: 100%;
+    }
+}
+
+// --------- footer ----------------
+
 .hotelContact {
-
+    width: 80%;
     display: flex;
+    justify-content: space-between;
+    margin: 5% auto;
+    @media screen and (max-width: 799px) {
+        display: block;
+        margin: 20% auto;
+    }
+}
 
+.divContact {
+    margin-right: 10%;
+}
+
+.divContact p {
+    color: white;
+    @media screen and (max-width: 799px) {
+        color: rgba(255,255,255,0.5);
+    }
+}
+
+.divContact p:hover {
+    color: $color-primary;
+}
+
+.tel {
+    margin-bottom: 10%;
+    font-size: 150%;
+    font-family: $title-font;
+}
+
+.tel a {
+    color: white;
+}
+
+.iconContactTel {
+    display: flex;
+    align-items: center;
+    margin-right: 5%;
+}
+
+.tel a:hover {
+    color: $color-primary;
+}
+
+#aMailFooter {
+    border-bottom: 1px solid $color-primary;
+    padding-bottom: 2%;
+    color: white;
+    font-size: 90%;
+}
+
+#aMailFooter:hover {
+    color: $color-primary;
+}
+
+.reseaux {
+    margin-top: 10%;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 15%;
+}
+
+.reseaux i {
+    font-size: 100%;
+    color: white;
+    @media screen and (max-width: 799px) {
+        font-size: 200%;
+    }
+}
+
+.reseaux i:hover {
+    color: $color-primary;
 }
 
 footer {
-
+    background-color: $footer-color;
     display: flex;
     justify-content: center;
-
+    padding: 1% 0% 1% 0%;
+    @media screen and (max-width: 799px) {
+        padding: 5% 30px;
+    }
 }
 
-@import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Gilda+Display&display=swap%27");
+footer a {
+    color: white;
+}
+
+footer a:hover {
+    color: $color-primary;
+}
+
+footer span {
+    color: rgba(255,255,255,0.5);
+}
+// --------- global --------------
+
+a {
+    text-decoration: none;
+}
+
+.pageContact h1 {
+    font-weight: 400;
+    @media screen and (max-width: 799px) 
+    {font-size: 150%;}
+}
+
