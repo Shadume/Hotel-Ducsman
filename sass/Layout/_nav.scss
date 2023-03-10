@@ -72,6 +72,7 @@ nav {
     }
     .number{
         color: #AA8453;
+        font-size: "barlow";
     }
 
 @media screen and  (max-width: 500px) {
@@ -79,10 +80,14 @@ nav {
         display: block;
         position: fixed;
         z-index: 2;
+        max-width: 20px;
+        
     }
     #open-menu.visible{
         display: block;
+        size: 5px;
         position: fixed;
+        max-width: 20px;
         z-index: 1;
 
     }
