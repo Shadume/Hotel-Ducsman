@@ -2,6 +2,10 @@
     padding: 12px 20px;
     border: 1px solid white;
     text-transform: uppercase;
+    @media screen and (max-width: map-get($breakpoints, tablette)) {
+        font-size: 0.5em;
+        padding: 5px 10px;
+    }
     &--whiteBox{
         text-decoration: none;
         color: white;
@@ -13,6 +17,10 @@
     font-family: $little-title;
     letter-spacing: $l-spacing;
     text-transform: uppercase;
+    @media screen and (max-width: map-get($breakpoints, tablette)) {
+        font-size: 0.7em;   
+        letter-spacing: 3px;
+    }
 }
 
 @mixin title($font-size){
@@ -21,4 +29,7 @@
     line-height: 1.25em;
     font-weight: 400;
     margin: 0;
+    @media screen and (max-width: map-get($breakpoints, tablette)) {
+        font-size: 1.5em;   
+    }
 }

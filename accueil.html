@@ -11,12 +11,55 @@
     <title>Hôtel Ducsman</title>
 </head>
 <body class="bodyAccueil">
+    <!--<main class="homepage">
+        <img src="images/icon/menu-burger.png" alt="ouvrir le menu" id="open-menu">
+        <aside>
+            <div class="sidebar sticky">
+                <div class="nav-header">
+                    <nav>
+                        <div class="rate">
+                            <img src="images/icon/star.png" alt="note">
+                            <img src="images/icon/star.png" alt="note">
+                            <img src="images/icon/star.png" alt="note">
+                            <img src="images/icon/star.png" alt="note">
+                            <img src="images/icon/star.png" alt="note">
+                        </div>
+                        <h1>DUCSMAN</h1>
+                        <h2>DORMEZ COMME JAMAIS</h2>
+                        <div class="navigation">
+                            <a href="accueil.html">ACCUEIL</a>
+                            <a href="apropos.html">A PROPOS</a>
+                            <a href="chambresetsuites.html">CHAMBRES & SUITES</a>
+                            <a href="restaurant.html">RESTAURANT</a>
+                            <a href="centrebienêtre.html">CENTRE DE BIEN ÊTRE </a>
+                            <a href="actualité.html">ACTUALITE</a>
+                            <a href="contact.html">CONTACT</a>
+                        </div>
+                        <div class="reservation">
+                        </div>
+                        <div class="info">
+                            <i class="flaticon-call"></i>
+                            <div>
+                                <p>Informations & Réservations</p>
+                                <p class="number">03 20 01 02 03</p>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </aside>
+    </main>
+    <script src="navbar.js"></script>-->
     <nav class="test">
         <p>Nav</p>
     </nav>
     <main>
+        
         <!--Création du Header-->
         <header class="accueilHeader">
+            <div id="img">
+                <img src="images/slider/2.jpg" alt="slider">
+            </div>
             <!--Les 5 étoiles du Header-->
             <div class="accueilHeader__icon">
                 <img src="images/icon/star.png">
@@ -82,7 +125,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="sectionChambres__cards--33">
+                <div class="sectionChambres__cards--33 sectionChambres__mobile">
                     <div class="sectionChambres__cards__card">
                         <div>
                             <img src="images/rooms/2.jpg" alt="Photo de la chambre Familiale">
@@ -97,7 +140,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="sectionChambres__cards--33">
+                <div class="sectionChambres__cards--33 sectionChambres__mobile">
                     <div class="sectionChambres__cards__card">
                         <div>
                             <img src="images/rooms/3.jpg" alt="Photo de la chambre Double">
@@ -112,7 +155,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="sectionChambres__cards--50">
+                <div class="sectionChambres__cards--50 sectionChambres__mobile">
                     <div class="sectionChambres__cards__card">
                         <div>
                             <img src="images/rooms/4.jpg" alt="Photo de la chambre Deluxe">
@@ -127,7 +170,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="sectionChambres__cards--50">
+                <div class="sectionChambres__cards--50 sectionChambres__mobile">
                     <div class="sectionChambres__cards__card">
                         <div>
                             <img src="images/rooms/7.jpg" alt="Photo de la chambre Supérieure">
@@ -143,7 +186,6 @@
                     </div>
                 </div>
             </div>
-                
         </section>
         <section class="sectionDecouverte">
             <div class="sectionDecouverte__row">
@@ -157,7 +199,9 @@
                             seneoice misuscipit non sagie the fermen ziverra tristiue duru the ivite dianne 
                             onen nivami acsetion augue artine.
                         </p>
-                        <a href="" class="btn">En savoir plus</a>
+                        <div class="sectionDecouverte__mobile">
+                            <a href="" class="btn">En savoir plus</a>
+                        </div>
                     </div>
                 </article>
             </div>
@@ -172,7 +216,9 @@
                             seneoice misuscipit non sagie the fermen ziverra tristiue duru the ivite dianne 
                             onen nivami acsetion augue artine.
                         </p>
-                        <a href="" class="btn">En savoir plus</a>
+                        <div class="sectionDecouverte__mobile">
+                            <a href="" class="btn">En savoir plus</a>
+                        </div>
                     </div>
                 </article>
             </div>
@@ -187,7 +233,9 @@
                             seneoice misuscipit non sagie the fermen ziverra tristiue duru the ivite dianne 
                             onen nivami acsetion augue artine.
                         </p>
-                        <a href="" class="btn">En savoir plus</a>
+                        <div class="sectionDecouverte__mobile">
+                            <a href="" class="btn">En savoir plus</a>
+                        </div>
                     </div>
                 </article>
             </div>
@@ -202,7 +250,9 @@
                             seneoice misuscipit non sagie the fermen ziverra tristiue duru the ivite dianne 
                             onen nivami acsetion augue artine.
                         </p>
-                        <a href="" class="btn">En savoir plus</a>
+                        <div class="sectionDecouverte__mobile">
+                            <a href="" class="btn">En savoir plus</a>
+                        </div>
                     </div>
                 </article>
             </div>
@@ -245,43 +295,67 @@
                     </ul>
                 </div>
             </div>
-            
         </section>
         <section class="sectionServices">
             <h2 class="sectionServices__title">Services en +</h2>
             <div class="sectionServices__cards">
-                <div>
-                    <i class="flaticon-world"></i>
-                    <h3>Transferts</h3>
-                    <p>Nous pouvons venir vous chercher directement à l’aéroport en voiture individuelle</p>
+                <div class="sectionServices__cards__card">
+                    <div class="sectionServices__cards__card__content">
+                        <i class="flaticon-world sectionServices__cards__card__content__odd"></i>
+                        <div>
+                            <h3 class="sectionServices__cards__card__content__title">Transferts</h3>
+                            <p>Nous pouvons venir vous chercher directement à l’aéroport en voiture individuelle</p>
+                        </div>
+                    </div>
                 </div>
-                <div>
-                    <i class="flaticon-car"></i>
-                    <h3>Parking</h3>
-                    <p>Une place de parking peut vous être réservée</p>
+                <div class="sectionServices__cards__card">
+                    <div class="sectionServices__cards__card__content sectionServices__cards__card__content__mobile">
+                        <i class="flaticon-car"></i>
+                        <div>
+                            <h3 class="sectionServices__cards__card__content__title">Parking</h3>
+                            <p>Une place de parking peut vous être réservée</p>
+                        </div>
+                    </div>
                 </div>
-                <div>
-                    <i class="flaticon-bed"></i>
-                    <h3>Room Service</h3>
-                    <p>Nous nous occupons du nettoyage de la chambre et de l’entretien de vos vêtements</p>
+                <div class="sectionServices__cards__card">
+                    <div class="sectionServices__cards__card__content">
+                        <i class="flaticon-bed sectionServices__cards__card__content__odd"></i>
+                        <div>
+                            <h3 class="sectionServices__cards__card__content__title">Room Service</h3>
+                            <p>Nous nous occupons du nettoyage de la chambre et de l’entretien de vos vêtements</p>
+                        </div>
+                    </div>
                 </div>
-                <div>
-                    <i class="flaticon-swimming"></i>
-                    <h3>Piscine</h3>
-                    <p>Une piscine chauffée est à votre disposition</p>
+                <div class="sectionServices__cards__card">
+                    <div class="sectionServices__cards__card__content sectionServices__cards__card__content__mobile">
+                        <i class="flaticon-swimming"></i>
+                        <div>
+                            <h3 class="sectionServices__cards__card__content__title">Piscine</h3>
+                            <p>Une piscine chauffée est à votre disposition</p>
+                        </div>
+                    </div>
                 </div>
-                <div>
-                    <i class="flaticon-wifi"></i>
-                    <h3>Accès internet</h3>
-                    <p>Accès Wifi gratuit disponible dans l’ensemble de l’hôtel</p>
+                <div class="sectionServices__cards__card">
+                    <div class="sectionServices__cards__card__content">
+                        <i class="flaticon-wifi sectionServices__cards__card__content__odd"></i>
+                        <div>
+                            <h3 class="sectionServices__cards__card__content__title">Accès internet</h3>
+                            <p>Accès Wifi gratuit disponible dans l’ensemble de l’hôtel</p>
+                        </div>
+                    </div>
                 </div>
-                <div>
-                    <i class="flaticon-serving-dish"></i>
-                    <h3>Petit déjeuner</h3>
-                    <p>Le Restaurant vous propose, tous les matins, un buffet continental</p>
+                <div class="sectionServices__cards__card">
+                    <div class="sectionServices__cards__card__content sectionServices__cards__card__content__mobile">
+                        <i class="flaticon-breakfast"></i>
+                        <div>
+                            <h3 class="sectionServices__cards__card__content__title">Petit déjeuner</h3>
+                            <p>Le Restaurant vous propose, tous les matins, un buffet continental</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
+        <script src="accueil.js"></script>
     </main>
 </body>
 </html>

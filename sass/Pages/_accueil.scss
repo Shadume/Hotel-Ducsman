@@ -2,11 +2,18 @@
 .bodyAccueil{
     display: grid;
     grid-template-columns: 20% 80%;
+    @media screen and (max-width: map-get($breakpoints, tablette)) {
+        display: block;
+        width: 100%;   
+    }
 }
 
 .test{
     min-width: 20.9%;
     background-color: #1B1B1B;
+    @media screen and (max-width: map-get($breakpoints, tablette)) {
+        display: none;
+    }
 }
 
 /*Fin de la nav test*/
@@ -19,10 +26,23 @@
     text-align: center;
     color: white;
     padding-bottom: 325px;
+    @media screen and (max-width: map-get($breakpoints, tablette)) {
+        min-height: 100vh;
+        padding-bottom: 0;
+        background-size: cover;
+        background-position: 55% 0;
+    }
+    img{
+        width: 100%;
+    }
     &__icon {
         img{
         margin: 250px 2px 0 2px;
         max-width: 1.3%;
+        @media screen and (max-width: map-get($breakpoints, tablette)) {
+            max-width: 4%;
+            margin: 150px 2px 0 2px;
+        }
         }
     }
     p {
@@ -39,12 +59,19 @@
         font-weight: 300;
         margin-top: 30px;
         line-height: 1.35em;
+        @media screen and (max-width: map-get($breakpoints, tablette)) {
+            font-size: 1em;
+        }
     }
     &__btn{
         @include btn;
         margin: auto;
         letter-spacing: 0.2rem;
         max-width: 15%;
+        @media screen and (max-width: map-get($breakpoints, tablette)) {
+            max-width: 50%;
+            margin-top: 30px;
+        }
         &:hover{
             background: rgba($color: #ffffff, $alpha: 0.2);
             transition: all 0.3s ease;
@@ -56,49 +83,82 @@
 .sectionExp{
     display: flex;
     margin: auto;
-    padding: 120px 60px;
+    padding: 120px;
+    @media screen and (max-width: map-get($breakpoints, tablette)) {
+        padding: 40px 30px;
+        flex-direction: column;
+    }
     &__text{
         max-width: 50%;
+        @media screen and (max-width: map-get($breakpoints, tablette)) {
+            min-width: 100%;
+        }
         &__littleTitle{
             @include littleTitle(6px);
         }
         &__title{
-            @include title(46px);
+            @include title(56px);
         }
     }
     &__icon{
         img{
             max-width: 3%;
             margin: 0 2px 0 2px;
+            @media screen and (max-width: map-get($breakpoints, tablette)) {
+                max-width: 4.5%;
+            }
         }
     }
     &__img{
         max-width: 25%;
+        @media screen and (max-width: map-get($breakpoints, tablette)) {
+            max-width: 100%;
+        }
         img{
             width: 100%;
             height: auto;
         }
         &--marginTop{
             margin-top: 90px;
+            @media screen and (max-width: map-get($breakpoints, tablette)) {
+                margin-top: 40px;
+            }
         }
     }
     >*{
         padding: 0 15px;
+        @media screen and (max-width: map-get($breakpoints, tablette)) {
+            padding: 0;
+        }
     }
 }
 
 /*Mise en page de la section 2 => Les chambres et suites*/
 .sectionChambres{
-    padding: 120px 60px;
+    padding: 120px;
     background-color: #1e1e1e;
+    @media screen and (max-width: map-get($breakpoints, tablette)) {
+        padding: 40px 30px;
+    }
     &__littleTitle{
         @include littleTitle(6px);
-        margin-left: 15px
+        margin-left: 15px;
+        @media screen and (max-width: map-get($breakpoints, tablette)) {
+            margin: 0;
+        }
+    }
+    &__mobile{
+        @media screen and (max-width: map-get($breakpoints, tablette)) {
+            display: none;
+        }
     }
     &__title{
-        @include title(46px);
+        @include title(56px);
         margin-bottom: 20px;
         margin-left: 15px;
+        @media screen and (max-width: map-get($breakpoints, tablette)) {
+            margin-left: 0;
+        }
     }
     &__cards{
         display: flex;
@@ -155,9 +215,15 @@
         }
         &--33{
             width: 30.9%;
+            @media screen and (max-width: map-get($breakpoints, tablette)) {
+                width: 100%;
+            }
         }
         &--50{
             width: 47.5%;
+            @media screen and (max-width: map-get($breakpoints, tablette)) {
+                width: 100%;
+            }
         }
         >* {
             max-width: 100%;
@@ -171,16 +237,28 @@
 
 /*Mise en page de la section 3 => Découverte*/
 .sectionDecouverte{
-    padding: 75px 60px;
+    padding: 75px 120px;
+    @media screen and (max-width: map-get($breakpoints, tablette)) {
+        padding: 0;
+    }
     &__row{
         display: flex;
         background: #2b2b2b;
         margin: 0 1.2%;
+        @media screen and (max-width: map-get($breakpoints, tablette)) {
+            margin: 0;
+        }
+        @media screen and (max-width: map-get($breakpoints, tablette)) {
+            display: block;;
+        }
         article{
             width: 50%;
             display: flex;
             flex-direction: column;
             justify-content: center;
+            @media screen and (max-width: map-get($breakpoints, tablette)) {
+                width: 100%;
+            }
         }
         &__container{
             padding: 30px;
@@ -207,6 +285,9 @@
                     transition: all 0.3s ease;
                 }
             }
+            @media screen and (max-width: map-get($breakpoints, tablette)) {
+                margin-bottom: 20px;
+            }
         }
     }
     .reverse{
@@ -214,25 +295,46 @@
     }
     img{
         width: 50%;
+        @media screen and (max-width: map-get($breakpoints, tablette)) {
+            width: 100%;
+        }
+    }
+    &__mobile{
+        @media screen and (max-width: map-get($breakpoints, tablette)) {
+            max-width: 70%;
+            margin: auto;
+        }
     }
 }
 
 /*Mise en page de la section 4 => Options*/
 .sectionOptions{
-    padding: 80px 0;
+    padding: 80px 60px;
+    @media screen and (max-width: map-get($breakpoints, tablette)) {
+        padding: 0;
+    }
     &__container{
         padding: 0 60px;
         display: flex;
         justify-content: space-between;
+        @media screen and (max-width: map-get($breakpoints, tablette)) {
+            padding: 0;
+            display: block;
+        }
         &__txt{
             width: 30.9%;
             padding-left: 1.2%;
+            @media screen and (max-width: map-get($breakpoints, tablette)) {
+                max-width: 100%;
+                width: auto;
+                padding: 40px 30px;
+            }
             &__reservation{
                 display: flex;
                 align-items: center;
                 margin-top: 30px;
                 i {
-                    font-size: 35px;
+                    font-size: 45px;
                     color: $color-primary;
                     margin-right: 20px;
                 }
@@ -247,13 +349,18 @@
                 }
             }
             &__title{
-                @include title(46px);
+                @include title(56px);
             }
         }
         &__option{
             background: #2b2b2b;
             width: 25%;
             padding: 40px;
+            @media screen and (max-width: map-get($breakpoints, tablette)) {
+                max-width: 100%;
+                width: auto;
+                padding: 30px;
+            }
             &__title{
                 @include title(24px);
             }
@@ -261,6 +368,7 @@
                 display: flex;
                 align-items: center;
                 p {
+                    margin: 10% 0;
                     &:first-of-type{
                         font-size: 40px;
                         color: $color-primary;
@@ -269,6 +377,7 @@
                 }
             }
             ul{
+                margin-top: 0;
                 list-style: none;
                 padding: 0;
                 .ti-check{
@@ -285,17 +394,66 @@
     }
     &__right{
         margin-right: 1.2%;
+        @media screen and (max-width: map-get($breakpoints, tablette)) {
+            display: none;
+        }
     }
 }
 
 /*Mise en page de la section 5 => Services en +*/
 
 .sectionServices{
-    padding: 0 60px;
+    padding: 120px;
+    @media screen and (max-width: map-get($breakpoints, tablette)) {
+        padding: 0;
+    }
     &__title{
-        @include title(46px);
+        @include title(56px);
+        margin-bottom: 20px;
+        @media screen and (max-width: map-get($breakpoints, tablette)) {
+            padding: 40px 30px;
+        }
     }
     &__cards{
         display: flex;
+        flex-wrap: wrap;
+        @media screen and (max-width: map-get($breakpoints, tablette)) {
+            display: block;
+        }
+        &__card{
+            width: 30%;
+            padding-right: 1.9%;
+            @media screen and (max-width: map-get($breakpoints, tablette)) {
+                width: 100%;
+            }
+            &__content{
+                padding: 30px;
+                margin-bottom: 30px;
+                border: 1px solid #2b2b2b;
+                @media screen and (max-width: map-get($breakpoints, tablette)) {
+                    margin-bottom: 0;
+                    display: flex;
+                    align-items: center;
+                    border-left: none;
+                    border-right: none;
+                }
+                i{
+                    font-size: 55px;
+                    color: $color-primary;
+                }
+                &__odd{
+                    margin-right: 20px;
+                }
+                &__mobile{
+                    @media screen and (max-width: map-get($breakpoints, tablette)) {
+                        flex-direction: row-reverse;
+                    }
+                }
+            &__title{
+                @include title(26px);
+                margin-top: 20px;
+            }
+            }
+        }
     }
 }
