@@ -647,6 +647,12 @@ h1, h2, h3, h4, h5 {
   top: 0;
 }
 
+.titre {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 nav {
   position: fixed;
   justify-content: space-around;
@@ -657,18 +663,23 @@ nav {
 nav h1 {
   font-family: "gilda display";
   color: #AA8453;
+  text-align: center;
   font-size: 20px;
+  margin-left: 10px;
 }
 nav h2 {
   font-family: "barlow";
   color: white;
   font-size: 10px;
+  text-align: center;
+  margin-left: 10px;
   letter-spacing: 5px;
 }
 nav div a {
   text-decoration: none;
   color: #8D8D8D;
   margin-left: 10px;
+  font-size: 20px;
   font-family: "barlow";
 }
 nav div a:hover {
@@ -722,7 +733,6 @@ nav #open-menu {
 
 .number {
   color: #AA8453;
-  font-size: "barlow";
 }
 
 @media screen and (max-width: 500px) {
