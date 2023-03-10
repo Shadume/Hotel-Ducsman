@@ -35,16 +35,13 @@ h1, h2, h3, h4, h5 {
   }
 }
 
-.test {
-  min-width: 20.9%;
-  background-color: #1B1B1B;
-}
-@media screen and (max-width: 799px) {
-  .test {
-    display: none;
-  }
-}
-
+/*.test{
+    min-width: 20.9%;
+    background-color: #1B1B1B;
+    @media screen and (max-width: map-get($breakpoints, tablette)) {
+        display: none;
+    }
+}*/
 /*Fin de la nav test*/
 /*Mise en page du header*/
 .accueilHeader {
@@ -647,12 +644,15 @@ h1, h2, h3, h4, h5 {
   top: 0;
 }
 
+<<<<<<< HEAD
 .titre {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
+=======
+>>>>>>> 91f93f1d71aa3237add3d91f7d91d387aefb2954
 nav {
   position: fixed;
   justify-content: space-around;
@@ -663,23 +663,33 @@ nav {
 nav h1 {
   font-family: "gilda display";
   color: #AA8453;
+<<<<<<< HEAD
   text-align: center;
   font-size: 20px;
   margin-left: 10px;
+=======
+  font-size: 20px;
+>>>>>>> 91f93f1d71aa3237add3d91f7d91d387aefb2954
 }
 nav h2 {
   font-family: "barlow";
   color: white;
   font-size: 10px;
+<<<<<<< HEAD
   text-align: center;
   margin-left: 10px;
+=======
+>>>>>>> 91f93f1d71aa3237add3d91f7d91d387aefb2954
   letter-spacing: 5px;
 }
 nav div a {
   text-decoration: none;
   color: #8D8D8D;
   margin-left: 10px;
+<<<<<<< HEAD
   font-size: 20px;
+=======
+>>>>>>> 91f93f1d71aa3237add3d91f7d91d387aefb2954
   font-family: "barlow";
 }
 nav div a:hover {
@@ -740,6 +750,7 @@ nav #open-menu {
     display: block;
     position: fixed;
     z-index: 2;
+<<<<<<< HEAD
     max-width: 20px;
   }
   #open-menu.visible {
@@ -747,6 +758,12 @@ nav #open-menu {
     size: 5px;
     position: fixed;
     max-width: 20px;
+=======
+  }
+  #open-menu.visible {
+    display: block;
+    position: fixed;
+>>>>>>> 91f93f1d71aa3237add3d91f7d91d387aefb2954
     z-index: 1;
   }
   aside {
@@ -878,4 +895,263 @@ input {
 footer {
   display: flex;
   justify-content: center;
+}
+
+.la-tete {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../images/slider/3.jpg");
+  background-position: 60% 40%;
+  text-align: center;
+  color: white;
+  padding-bottom: 325px;
+}
+@media screen and (max-width: 799px) {
+  .la-tete {
+    min-height: 100vh;
+    padding-bottom: 0;
+    background-size: cover;
+    background-position: 55% 0;
+  }
+}
+
+.icon img {
+  margin: 250px 2px 0 2px;
+  max-width: 1.3%;
+}
+@media screen and (max-width: 799px) {
+  .icon img {
+    max-width: 4%;
+    margin: 150px 2px 0 2px;
+  }
+}
+
+.la-tete p {
+  text-transform: uppercase;
+  letter-spacing: 0.4rem;
+  margin-top: 30px;
+  font-size: 15px;
+  font-family: "Barlow condensed", sans-serif;
+}
+
+.la-tete h2 {
+  text-transform: uppercase;
+  letter-spacing: 1rem;
+  font-size: 55px;
+  font-weight: 300;
+  margin-top: 30px;
+  line-height: 1.35em;
+  max-width: 40%;
+  margin: auto;
+}
+@media screen and (max-width: 799px) {
+  .la-tete h2 {
+    font-size: 2em;
+    max-width: 100%;
+  }
+}
+
+.main {
+  padding: 120px 120px 20px 120px;
+}
+@media screen and (max-width: 799px) {
+  .main {
+    padding: 20px 30px;
+  }
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
+@media screen and (max-width: 799px) {
+  .flex {
+    display: block;
+  }
+}
+
+.test {
+  max-width: 70%;
+}
+@media screen and (max-width: 799px) {
+  .test {
+    max-width: 100%;
+  }
+}
+
+.paragraph {
+  color: #AA8453;
+  font-family: "Barlow-condensed", sans-serif;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+}
+@media screen and (max-width: 799px) {
+  .paragraph {
+    font-size: 0.7em;
+    letter-spacing: 3px;
+  }
+}
+@media screen and (max-width: 799px) {
+  .paragraph {
+    font-size: 1em;
+  }
+}
+
+.main h2 {
+  font-size: 56px;
+  color: white;
+  line-height: 1.25em;
+  font-weight: 400;
+  margin: 0;
+}
+@media screen and (max-width: 799px) {
+  .main h2 {
+    font-size: 1.5em;
+  }
+}
+@media screen and (max-width: 799px) {
+  .main h2 {
+    font-size: 2em;
+  }
+}
+
+@media screen and (max-width: 799px) {
+  .mobile {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.column {
+  display: flex;
+  align-items: center;
+}
+@media screen and (max-width: 799px) {
+  .column {
+    display: flex;
+    flex-direction: column;
+    width: 33%;
+    align-items: center;
+    text-align: center;
+    margin-top: 10px;
+  }
+}
+
+@media screen and (max-width: 799px) {
+  .column p {
+    max-width: 80%;
+    padding: 5px 0;
+    line-height: 1.25em;
+  }
+}
+
+.flex2 h2 {
+  font-size: 36px;
+}
+
+.flex2 i {
+  color: #AA8453;
+  margin-right: 10px;
+  font-size: 1.5em;
+}
+@media screen and (max-width: 799px) {
+  .flex2 i {
+    margin: 0;
+    font-size: 2em;
+  }
+}
+
+.check1 {
+  display: flex;
+  padding: 0 120px;
+}
+@media screen and (max-width: 799px) {
+  .check1 {
+    display: block;
+    padding: 0 30px;
+  }
+}
+
+.check1 h2 {
+  font-size: 36px;
+  color: white;
+  line-height: 1.25em;
+  font-weight: 400;
+  margin: 0;
+}
+@media screen and (max-width: 799px) {
+  .check1 h2 {
+    font-size: 1.5em;
+  }
+}
+
+.check-in {
+  margin-right: 15%;
+}
+@media screen and (max-width: 799px) {
+  .check-in {
+    margin-bottom: 25px;
+  }
+}
+
+.check1 i {
+  color: #AA8453;
+  margin-right: 10px;
+}
+
+.modification {
+  padding: 20px 120px;
+  max-width: 60%;
+  margin-bottom: 80px;
+}
+@media screen and (max-width: 799px) {
+  .modification {
+    padding: 20px 30px;
+    max-width: 100%;
+  }
+}
+
+.modification h2 {
+  font-size: 36px;
+  color: white;
+  line-height: 1.25em;
+  font-weight: 400;
+  margin: 0;
+}
+@media screen and (max-width: 799px) {
+  .modification h2 {
+    font-size: 1.5em;
+  }
+}
+
+.link {
+  padding: 12px 20px;
+  text-transform: uppercase;
+  background-color: #3B3B3B;
+  max-width: 30%;
+  text-align: center;
+}
+@media screen and (max-width: 799px) {
+  .link {
+    padding: 15px 30px;
+    max-width: 70%;
+    background-color: #AA8453;
+    margin: auto;
+    margin-top: 25px;
+  }
+}
+.link:hover {
+  background: none;
+  border: 1px solid white;
+}
+
+.link a {
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+  text-decoration: none;
+  letter-spacing: 3px;
+}
+@media screen and (max-width: 799px) {
+  .link a {
+    letter-spacing: 1px;
+  }
 }/*# sourceMappingURL=main.css.map */
