@@ -2,7 +2,15 @@
 @import "./Utils/functions";
 @import "./Utils/mixins";
 @import "./Utils/placeholders";
+@import "./Base/base";
 @import "./Base/typography";
+@import "./Components/buttons";
 @import "./Pages/accueil.scss";
 @import "./Layout/header";
+@import "./Layout/nav";
+<<<<<<< HEAD
 @import "./Pages/contact.scss";
+=======
+@import "./Pages/contact.scss";
+@import "./Pages/chambre.scss";
+>>>>>>> 91f93f1d71aa3237add3d91f7d91d387aefb2954
